@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd ">
+	<!-- set方式注入 -->
+	<bean name="user3" class="com.snsoft.crm.bean.User">
+		<!-- 值类型注入:为user3对象中名为name的属性注入Tom作为值 -->
+		<property name="name" value="Tom"></property>
+		<property name="age" value="18"></property>
+		<!-- 引入类型注入:为user3注入下方配置的sheet对象 -->
+		<property name="sheet" ref="sheet"></property>
+	</bean>
+	
+	<!-- 将sheet对象注入到容器中 -->
+	<bean name="sheet" class="com.snsoft.crm.bean.Sheet">
+		<property name="sheeticode" value="LMM0010000001"></property>
+		<property name="sheetcode" value="LMM0010001"></property>
+		<property name="cuicode" value="LMM001"></property>
+	</bean>
+</beans>

@@ -26,4 +26,14 @@ public class Demo {
 		//3.打印user对象
 		System.out.println(user);
 	}
+
+	@Test
+	public void test03() {
+		//1.创建容器对象
+		ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+		//2.向容器"要"对象
+		User user = (User) ac.getBean("user3");
+		//3.打印user对象
+		System.out.println(user);
+	}
 }

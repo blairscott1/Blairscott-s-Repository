@@ -3,14 +3,17 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.snsoft.crm"/>
+			<item value="MavenForSSM"/>
 		</list>
 		<list key="name">
+			<item value="learn for ssm"/>
 			<item value="lmm"/>
 			<item value="train"/>
 			<item value="初识Maven"/>
 			<item value="培训"/>
 		</list>
 		<list key="artifactId">
+			<item value="mavenForSSM"/>
 			<item value="maven-first"/>
 			<item value="train"/>
 		</list>
