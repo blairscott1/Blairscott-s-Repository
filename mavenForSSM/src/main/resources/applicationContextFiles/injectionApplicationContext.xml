@@ -15,4 +15,25 @@
 		<property name="sheetcode" value="LMM0010001"></property>
 		<property name="cuicode" value="LMM001"></property>
 	</bean>
+	
+	<!-- 构造函数注入 -->
+	<bean name="user4" class="com.snsoft.crm.bean.User">
+		<!-- 
+			name: 构造函数的参数名
+			index:构造函数中的参数所对应的索引
+			type: 该参数所对应的类全路径
+		 -->
+		<constructor-arg name="name" index="0" type="java.lang.String" value="Jerry"></constructor-arg>
+		<constructor-arg name="sheet" ref="sheet"></constructor-arg>
+	</bean>
+	
+	<!-- 复杂类型注入 -->
+	<bean name="cb" class="com.snsoft.crm.bean.CollectionBean">
+		<!-- 如果数组中只准备注入一个值(对象),可以直接用value(ref) -->
+		<!-- <property name="obj" value="Tom"></property> -->
+		<!-- 输入中注入多个值 -->
+		<property name="obj">
+			<value>Tom</value>
+		</property>
+	</bean>
 </beans>

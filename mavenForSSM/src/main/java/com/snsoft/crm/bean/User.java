@@ -10,6 +10,12 @@ public class User {
 		System.out.println("调用空参构造方法!!!");
 	}
 
+	public User(String name, Sheet sheet) {
+		System.err.println("public User(String name, Sheet sheet)");
+		this.name = name;
+		this.sheet = sheet;
+	}
+
 	public Sheet getSheet() {
 		return sheet;
 	}
