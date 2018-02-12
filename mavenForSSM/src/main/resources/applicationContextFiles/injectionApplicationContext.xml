@@ -29,11 +29,39 @@
 	
 	<!-- 复杂类型注入 -->
 	<bean name="cb" class="com.snsoft.crm.bean.CollectionBean">
-		<!-- 如果数组中只准备注入一个值(对象),可以直接用value(ref) -->
-		<!-- <property name="obj" value="Tom"></property> -->
-		<!-- 输入中注入多个值 -->
-		<property name="obj">
-			<value>Tom</value>
+		<!-- 单元素注入 -->
+		<!-- <property name="arr" value="Tom"></property> -->
+		<!-- Array注入,多元素注入 -->
+		<property name="arr">
+			<array>
+				<value>Tom</value>
+				<value>18</value>
+				<ref bean="user4"/>
+			</array>
+		</property>
+		<!-- List类型注入 -->
+		<property name="list">
+			<list>
+				<value>Jerry</value>
+				<value>18</value>
+				<ref bean="user3"/>
+			</list>
+		</property>
+		<!-- Map类型注入 -->
+		<property name="map">
+			<map>
+				<entry key="name" value="zhangsan"></entry>
+				<entry key="user" value-ref="user4"></entry>
+				<entry key-ref="user3" value-ref="user4"></entry>
+			</map>
+		</property>
+		<!-- Properties类型注入 -->
+		<property name="prop">
+			<props>
+				<prop key="driverName">com.jdbc.mysql.Driver</prop>
+				<prop key="userName">root</prop>
+				<prop key="password">1234</prop>
+			</props>
 		</property>
 	</bean>
 </beans>

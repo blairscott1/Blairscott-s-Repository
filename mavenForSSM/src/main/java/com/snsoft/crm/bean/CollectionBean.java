@@ -6,15 +6,15 @@ import java.util.Map;
 import java.util.Properties;
 
 public class CollectionBean {
-	private Object[] obj;//数组类型注入
+	private Object[] arr;//数组类型注入
 	private List list;//List/Set类型注入
 	private Map map;//Map类型注入
 	private Properties prop;//Properties类型注入
-	public Object[] getObj() {
-		return obj;
+	public Object[] getArr() {
+		return arr;
 	}
-	public void setObj(Object[] obj) {
-		this.obj = obj;
+	public void setArr(Object[] arr) {
+		this.arr = arr;
 	}
 	public List getList() {
 		return list;
@@ -36,7 +36,7 @@ public class CollectionBean {
 	}
 	@Override
 	public String toString() {
-		return "CollectionBean [obj=" + Arrays.toString(obj) + ", list=" + list + ", map=" + map + ", prop=" + prop
+		return "CollectionBean [\n arr=" + Arrays.toString(arr) + ",\n list=" + list + ",\n map=" + map + ",\n prop=" + prop
 				+ "]";
 	}
 }
