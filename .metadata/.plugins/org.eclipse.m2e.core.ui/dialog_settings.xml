@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="es"/>
+			<item value="cn.com.snsoft"/>
 			<item value="com.snsoft.crm"/>
 			<item value="MavenForSSM"/>
 		</list>
@@ -13,6 +15,8 @@
 			<item value="培训"/>
 		</list>
 		<list key="artifactId">
+			<item value="sd"/>
+			<item value="testMybatis"/>
 			<item value="spring-web"/>
 			<item value="mavenForSSM"/>
 			<item value="maven-first"/>
