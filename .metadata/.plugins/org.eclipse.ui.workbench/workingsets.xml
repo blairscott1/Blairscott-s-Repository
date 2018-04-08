@@ -2,7 +2,7 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1517756679342_2" label="mavenProjects" name="mavenProjects">
 <item elementID="=maven-first" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/mavenForSSM" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/testForStringAop" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/testMybatis" type="4"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516375903300_0" label="Window Working Set" name="Aggregate for window 1516375903299"/>
